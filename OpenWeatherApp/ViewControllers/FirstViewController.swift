@@ -15,7 +15,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
     private let openWeatherMapBaseURL = "https://api.openweathermap.org/data/2.5/weather"
     private let openWeatherMapAPIKey = "368e827be4b38db51ff960ca88b5c396"
     
-    // Ekaterinburg defaults = 56.8519 60.6122
+    // Ekaterinburg for testing = 56.8519 60.6122
     var lat: Double?
     var lon: Double?
 
@@ -39,7 +39,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
 
     }
     
-    //MARK: Observing background statment
+    //MARK: Observing background statement
     fileprivate  func addObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(applicationDidBecomeActive),
